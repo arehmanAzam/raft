@@ -35,7 +35,8 @@ def build_langchain_embeddings(**kwargs: Any) -> OpenAIEmbeddings:
         if  is_azure():
             client = AzureOpenAIEmbeddings(**kwargs)
         else:
-            client = SentenceTransformerEmbeddings(model_name='BAAI/bge-small-en-v1.5',cache_folder='./models')
+            model_name = kwargs.get('model_name', 'BAAI/bge-small-en-v1.5')  # Default model name if not provided
+            client = SentenceTransformerEmbeddings(model_name=model_name,cache_folder='./models')
         return client
 
 def is_azure():
