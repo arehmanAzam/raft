@@ -1,5 +1,5 @@
 # RAFT with AWS Bedrock 
-This repo originally originates from [Shishir Patel](https://github.com/ShishirPatil)'s [Gorrilla RAFT](https://github.com/ShishirPatil/gorilla/tree/main/raft).
+This repo originates from [Shishir Patel](https://github.com/ShishirPatil)'s [Gorrilla RAFT](https://github.com/ShishirPatil/gorilla/tree/main/raft).
 I have just made addition of Huggingface Embedding model option instead of OpenAI's embedding model and 
 AWS Bedrock completion models instead of OpenAI's completion models.
 
